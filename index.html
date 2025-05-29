@@ -3,99 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festejando a Conexão Campo-Cidade</title>
+    <title>Conexão Campo-Cidade: Celebrando a Harmonia</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
         }
         header {
-            background: #4CAF50;
+            background-color: #4CAF50; /* Um verde que remete ao campo */
             color: white;
-            padding: 10px 0;
+            padding: 1.5em 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
         }
         nav {
-            margin: 10px 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.8em 0;
         }
         nav a {
             color: white;
-            padding: 14px 20px;
             text-decoration: none;
+            margin: 0 1.5em;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            background-color: #45a049;
+            color: #8BC34A; /* Um verde mais claro para hover */
         }
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
+            width: 85%;
+            margin: 2em auto;
+            padding: 1.5em;
+            background-color: white;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
-        section {
-            margin: 20px 0;
+        .section {
+            padding: 2em 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.2em;
+            color: #4CAF50;
+            margin-bottom: 1em;
+            position: relative;
+            display: inline-block;
+        }
+        .section h2::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background-color: #8BC34A;
+            left: 20%;
+            bottom: -10px;
+        }
+        .section p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 1.5em auto;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            margin-top: 2em;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #FF9800; /* Um laranja vibrante */
+            color: white;
+            padding: 0.8em 1.5em;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #FB8C00;
         }
         footer {
-            text-align: center;
-            padding: 10px;
-            background: #4CAF50;
+            background-color: #333;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        @media (max-width: 600px) {
-            nav {
-                display: block;
-            }
-            nav a {
-                display: block;
-                margin: 5px 0;
-            }
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 3em;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Conexão Campo-Cidade</h1>
+        <p>Celebrando a Harmonia e o Intercâmbio</p>
+    </header>
 
-<header>
-    <h1>Festejando a Conexão Campo-Cidade</h1>
     <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#eventos">Eventos</a>
-        <a href="#contato">Contato</a>
+        <a href="#introducao">Introdução</a>
+        <a href="#valores">Valores Compartilhados</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+        <a href="#futuro">Olhando para o Futuro</a>
     </nav>
-</header>
 
-<div class="container">
-    <section id="sobre">
-        <h2>Sobre o Evento</h2>
-        <p>Este evento celebra a rica conexão entre o campo e a cidade, promovendo a troca de culturas, tradições e saberes.</p>
-    </section>
+    <main class="container">
+        <section id="introducao" class="section">
+            <h2>Introdução: Um Laço Essencial</h2>
+            <p>A relação entre o campo e a cidade é uma teia intrínseca que sustenta nossa sociedade. Longe de serem mundos separados, eles se complementam, alimentando-se mutuamente de recursos, culturas e inovações. Essa página é uma celebração dessa **conexão vital**, explorando como a força do rural e a efervescência do urbano se encontram e se enriquecem.</p>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/300x200?text=Paisagem+Rural" alt="Paisagem rural com plantações">
+                <img src="https://via.placeholder.com/300x200?text=Horizonte+Urbano" alt="Horizonte urbano com prédios">
+                <img src="https://via.placeholder.com/300x200?text=Mercado+Local" alt="Mercado local com produtos frescos">
+            </div>
+        </section>
 
-    <section id="eventos">
-        <h2>Eventos</h2>
-        <ul>
-            <li>Feira de Produtos Orgânicos</li>
-            <li>Oficinas de Culinária Rural</li>
-            <li>Apresentações Culturais</li>
-        </ul>
-    </section>
+        <hr>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Para mais informações, entre em contato pelo e-mail: contato@conexaocampocidade.com</p>
-    </section>
-</div>
+        <section id="valores" class="section">
+            <h2>Valores Compartilhados e Intercâmbio</h2>
+            <p>Do campo, recebemos o alimento que nutre, a matéria-prima que transforma e a sabedoria ancestral da terra. Da cidade, vêm a tecnologia que otimiza, o conhecimento que inova e as oportunidades que conectam. É um fluxo constante de **ideias e bens**, onde a diversidade de cada ambiente contribui para a riqueza do todo.</p>
+            <p>Pensando no intercâmbio, podemos destacar a valorização de produtos orgânicos, o turismo rural, a migração de tecnologias e a troca cultural que ocorre quando esses dois mundos se encontram de forma respeitosa e colaborativa.</p>
+        </section>
 
-<footer>
-    <p>&copy; 2025 Festejando a Conexão Campo-Cidade</p>
-</footer>
+        <hr>
 
+        <section id="sustentabilidade" class="section">
+            <h2>Sustentabilidade: Construindo um Futuro Juntos</h2>
+            <p>O futuro da conexão campo-cidade passa inegavelmente pela **sustentabilidade**. A produção responsável no campo, que cuida do solo e da água, e o consumo consciente na cidade, que valoriza o que vem da terra, são pilares para uma relação duradoura e próspera. A busca por um equilíbrio é fundamental para garantir que as próximas gerações também possam usufruir dessa harmonia.</p>
+            <p>Iniciativas como a agricultura familiar, as feiras de produtores e a conscientização ambiental nas cidades são exemplos de como essa sinergia pode ser fortalecida.</p>
+            <a href="#" class="cta-button">Saiba mais sobre Sustentabilidade</a>
+        </section>
+
+        <hr>
+
+        <section id="futuro" class="section">
+            <h2>Olhando para o Futuro: Uma Conexão Cada Vez Mais Forte</h2>
+            <p>Acreditamos que, ao fomentar o diálogo e a compreensão mútua, a conexão campo-cidade pode florescer ainda mais. É tempo de celebrar as particularidades de cada um e reconhecer a força que surge da sua união. Juntos, campo e cidade constroem uma realidade mais rica, resiliente e humanizada.</p>
+            <p>Que esta página inspire a reflexão sobre o valor inestimável dessa relação e promova um olhar de apreço e cuidado para com ambos os ambientes.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conexão Campo-Cidade. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
-
-<link rel="stylesheet" href="style.css">
